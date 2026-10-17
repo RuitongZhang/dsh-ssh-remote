@@ -1,0 +1,6 @@
+- insert:
+    - id: ssh-remote
+      name: dsh-ssh-remote
+      config:
+        host: Linux
+        root: "~"

@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "SSH Remote Coding",
+    "description": "Work on a remote Linux host through your local SSH config: read and edit files, search, and run commands from the agent."
+  }
+}
