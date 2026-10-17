@@ -4,6 +4,9 @@
 
 > A DeepSeek Harness bundle that exposes six remote tools — run, read, write, edit, grep, glob — on a Linux host reached through your local SSH config. Setup instructions below are in Chinese.
 
+> [!WARNING]
+> **免责声明：本插件不提供任何安全功能。** 没有沙箱、没有权限校验、没有命令白名单、没有逐次确认；`remote_*` 工具以你的远程账号身份直接读文件、写文件、执行命令。哪些目录可以改、哪些命令能跑，需要你自己把握。
+
 ## 为什么做这个
 
 DSH 桌面端只有 macOS 和 Windows，没有 Linux 版；而日常写代码的机器往往是一台 Linux 工作站。这个插件不搬运整个 harness，只把模型最需要的六件事接到 SSH 上，让「本机 DSH + 远程 Linux」组成一套完整的 vibe coding 环境。
@@ -166,3 +169,7 @@ TEST_HOST=myhost node test.mjs
 - 远端：`bash`、`awk`、GNU coreutils（`base64`、`stat -c`、`chmod --reference`）、`ripgrep`。
 - 本机：macOS 或 Linux，OpenSSH 客户端，Node.js 18+（仅自检脚本需要）。
 - DSH 0.2.x；纯 Host bundle，无第三方依赖，不需要构建。
+
+## 许可证
+
+[MIT](LICENSE) © 2026 Ruitong Zhang
